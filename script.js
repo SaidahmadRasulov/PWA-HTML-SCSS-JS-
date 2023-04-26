@@ -15,11 +15,11 @@ window.addEventListener('scroll', () => {
 });
 
 
-if("serviceWorker" in navigator) {
-    window.addEventListener("load", function() {
-        navigator.serviceWorker
-            .register('/serviceWorker.js')
-            .then(res => console.log('service work register'))
-            .catch(err => console.log('error', err))
-    })
-}
+// if("serviceWorker" in navigator) {
+//     window.addEventListener("load", function() {
+//         navigator.serviceWorker
+//             .register('/serviceWorker.js')
+//             .then(res => console.log('service work register'))
+//             .catch(err => console.log('error', err))
+//     })
+// }

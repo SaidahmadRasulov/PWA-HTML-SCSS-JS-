@@ -1,0 +1,99 @@
+.customers__section {
+    padding: 3rem 0;
+
+    .customers__title {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto 2rem auto;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .customers__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .customer__card {
+            width: 25%;
+
+            p {
+                margin: 1rem 0;
+            }
+        }
+
+        .customer__card_header {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .customer__link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $orange;
+        }
+    }
+
+    .customers__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 0 1rem 0;
+    }
+
+    .customers__photo {
+        width: 350px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    .customers__section {
+        .customers__content {
+            flex-direction: column;
+            .customer__card {
+                width: 90%;
+            }
+        }
+
+        .customers__footer {
+            flex-direction: column;
+        }
+
+        .customers__photo {
+            width: 90%;
+        }
+
+        
+    }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+    .customers__section {
+        .customers__content {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            .customer__card {
+                width: 45%;
+            }
+        }
+        .customers__footer {
+            flex-wrap: wrap;
+        }
+        .customers__photo {
+            width: 50%;
+        }
+    }
+}

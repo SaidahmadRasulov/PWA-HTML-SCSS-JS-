@@ -1,0 +1,37 @@
+.navigation__carousel_section {
+    padding: 4rem 0;
+    .navigation__content {
+        .swiper__card {
+            margin: 0;
+            cursor: grab;
+        }
+        .swiper__card_header {
+            margin-bottom: 2rem;
+        }
+        .swiper__card_body {
+            width: 40%;
+            margin: 0 auto 2rem auto;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            &::after {
+                font-size: 1rem !important;
+                background-color: rgb(189, 189, 189);
+                width: 100px;
+                text-align: center;
+                padding: 0 .5rem;
+                color: black;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 0) and (max-width: 520px) {
+    .navigation__carousel_section {
+        .navigation__content {
+            .swiper__card_body {
+                width: 70%;
+            }
+        }
+    }
+}
