@@ -1,0 +1,77 @@
+.solution__section {
+    padding: 5rem 0;
+    .solution__title {
+        text-align: center;
+        h1 {
+            margin: 1rem 0;
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+    .solution__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .startup {
+        background-image: url(../../Assets/startups.png);
+        button {
+            &:hover {
+                background-color: white;
+                color: black;
+                border: 1px solid white;
+            }
+        }
+    }
+    .enterprise {
+        background-image: url(../../Assets/enterprice.png);
+        color: white;
+        button {
+            color: white;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    .solution__card {
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 1rem 0 1rem;
+        width: 45%;
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        p {
+            margin: 1rem 0;
+        }
+    }
+    .solution__btn {
+        width: 150px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .solution__img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    .solution__section {
+        .solution__content {
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .solution__card {
+            width: 90%;
+        }
+    }
+}

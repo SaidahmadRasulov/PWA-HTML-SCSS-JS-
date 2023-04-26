@@ -1,0 +1,128 @@
+header {
+    padding: 1.5rem 3rem;
+    box-shadow: 0 0 15px 0 rgb(201, 199, 199);
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__group {
+        a {
+            border-radius: 5px;
+            padding: .5rem;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .gamburger {
+        display: none;
+        position: relative;
+    }
+
+    .media__group {
+        position: absolute;
+        box-shadow: 0 0 10px 0 gray;
+        border-radius: .3rem;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        display: none;
+        // padding: 1rem;
+    }
+
+    .media__group_item {
+        padding: 1rem;
+        &:hover {
+            background-color: black;
+            a {
+                color: white;
+            }
+        }
+        &:first-child {
+            border-radius: .3rem .3rem 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 .3rem .3rem;
+        }
+    }
+}
+
+.showNav {
+    display: block;
+}
+
+.fixed__nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+    z-index: 999;
+}
+
+.navbar__nav,
+.nav__group,
+.helper__group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.helper__group {
+    gap: 2rem;
+
+    button {
+        background: #F46A35;
+        border: 1px solid #F46A35;
+        border-radius: 10px;
+        width: 148px;
+        height: 36px;
+        font-size: 1.2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+    header {
+        .nav__group {
+            display: none;
+        }
+        .helper__group {
+            display: none;
+        }
+        .gamburger {
+            display: block;
+        }
+        .bi-list {
+            font-size: 1.3rem;
+        }
+        .showNav {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+    header {
+        .nav__group {
+            display: none;
+        }
+        .gamburger {
+            display: block;
+        }
+        .showNav {
+            display: block;
+        }
+        .bi-list {
+            font-size: 1.4rem;
+        }
+        .helper__group {
+            gap: 1rem;
+        }
+    }
+}

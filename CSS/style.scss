@@ -1,0 +1,37 @@
+$orange: #F46A35;
+$black: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+.fill {
+    background-color: $orange;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.outline {
+    background-color: white;
+}
+
+@import './general';
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
