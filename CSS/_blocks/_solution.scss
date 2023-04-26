@@ -56,6 +56,16 @@
         border: 1px solid;
         background-color: transparent;
         cursor: pointer;
+        &.white {
+            a {
+                color: white;
+            }
+            &:hover {
+                a {
+                    color: black;
+                }
+            }
+        }
     }
     .solution__img {
         img {

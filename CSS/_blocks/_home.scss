@@ -42,17 +42,23 @@
         cursor: pointer;
         &.fill {
             border: 1px solid $orange;
-            color: white;
+            a {
+                color: white;
+            }
             &:hover {
                 background-color: white;
+                a {
                 color: $orange;
+                }
             }
         }
         &.outline {
             border: 1px solid black;
             &:hover {
                 background-color: black;
+                a {
                 color: white;
+                }
             }
         }
     }

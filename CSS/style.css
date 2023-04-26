@@ -101,8 +101,10 @@ header .media__group_item:last-child {
   width: 148px;
   height: 36px;
   font-size: 1.2rem;
-  color: white;
   cursor: pointer;
+}
+.helper__group button a {
+  color: white;
 }
 
 @media (min-width: 0px) and (max-width: 520px) {
@@ -183,10 +185,14 @@ header .media__group_item:last-child {
 }
 .home__section .home_btn.fill {
   border: 1px solid #F46A35;
+}
+.home__section .home_btn.fill a {
   color: white;
 }
 .home__section .home_btn.fill:hover {
   background-color: white;
+}
+.home__section .home_btn.fill:hover a {
   color: #F46A35;
 }
 .home__section .home_btn.outline {
@@ -194,6 +200,8 @@ header .media__group_item:last-child {
 }
 .home__section .home_btn.outline:hover {
   background-color: black;
+}
+.home__section .home_btn.outline:hover a {
   color: white;
 }
 
@@ -290,6 +298,12 @@ header .media__group_item:last-child {
   border: 1px solid;
   background-color: transparent;
   cursor: pointer;
+}
+.solution__section .solution__btn.white a {
+  color: white;
+}
+.solution__section .solution__btn.white:hover a {
+  color: black;
 }
 .solution__section .solution__img img {
   width: 100%;
@@ -439,9 +453,15 @@ header .media__group_item:last-child {
 }
 .customers__section .customers__content .customer__card {
   width: 25%;
+  padding: 0 0 1rem 0;
+  cursor: pointer;
+}
+.customers__section .customers__content .customer__card:hover {
+  box-shadow: 0 0 10px 0 gray;
 }
 .customers__section .customers__content .customer__card p {
   margin: 1rem 0;
+  padding: 0 0.5rem;
 }
 .customers__section .customers__content .customer__card_header {
   width: 100%;
@@ -454,6 +474,7 @@ header .media__group_item:last-child {
   align-items: center;
   gap: 1rem;
   color: #F46A35;
+  padding: 0 0.5rem;
 }
 .customers__section .customers__footer {
   display: flex;
@@ -498,6 +519,93 @@ header .media__group_item:last-child {
   }
   .customers__section .customers__photo {
     width: 50%;
+  }
+}
+.resources__section {
+  padding: 4rem 0;
+  background-color: rgb(216, 212, 207);
+}
+.resources__section .resources__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resources__section .resources__title {
+  width: 40%;
+}
+.resources__section .resources__title h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.resources__section .resources__title p {
+  width: 65%;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.resources__section .resources__image {
+  width: 40%;
+}
+.resources__section .resources__image img {
+  width: 100%;
+}
+.resources__section .resources__btns {
+  margin: 1rem 0;
+}
+.resources__section .resources__btn {
+  width: 160px;
+  height: 48px;
+  border: 1px solid #212121;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.resources__section .resources__btn.fill {
+  border: 1px solid #F46A35;
+}
+.resources__section .resources__btn.fill a {
+  color: white;
+}
+.resources__section .resources__btn.fill:hover {
+  background: white;
+}
+.resources__section .resources__btn.fill:hover a {
+  color: #F46A35;
+}
+.resources__section .resources__btn.outline:hover {
+  background-color: black;
+}
+.resources__section .resources__btn.outline:hover a {
+  color: white;
+}
+
+@media (min-width: 0px) and (max-width: 520px) {
+  .resources__section .resources__content {
+    flex-direction: column;
+  }
+  .resources__section .resources__title {
+    width: 90%;
+  }
+  .resources__section .resources__title p {
+    width: 100%;
+  }
+  .resources__section .resources__image {
+    width: 90%;
+  }
+  .resources__section .resources__btn {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 520px) and (max-width: 768px) {
+  .resources__section .resources__image {
+    width: 60%;
+  }
+  .resources__section .resources__title {
+    padding: 0 0 0 1rem;
+  }
+  .resources__section .resources__title h1 {
+    font-size: 2rem;
+  }
+  .resources__section .resources__title p {
+    width: 100%;
   }
 }
 li {

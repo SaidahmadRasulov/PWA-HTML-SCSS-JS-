@@ -82,8 +82,10 @@ header {
         width: 148px;
         height: 36px;
         font-size: 1.2rem;
-        color: white;
         cursor: pointer;
+        a {
+        color: white;
+        }
     }
 }
 
