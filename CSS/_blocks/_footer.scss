@@ -1,0 +1,40 @@
+.footer__section {
+    background-color: $black;
+    padding: 3rem 0 2rem 0;
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .footer__item {
+        &.bold {
+            color: white;
+        }
+    }
+    .footer__text {
+        .white {
+            color: white;
+            margin-top: 1rem;
+        }
+    }
+    .footer__group {
+        width: 25%;
+    }
+}
+
+@media (min-width:0px) and (max-width: 768px) {
+    .footer__section {
+        .footer__content {
+            flex-wrap: wrap;
+            padding: 0 1rem;
+            gap: 1rem;
+        }
+        .footer__text {
+            padding:0 1rem;
+        }
+        .footer__group {
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+}

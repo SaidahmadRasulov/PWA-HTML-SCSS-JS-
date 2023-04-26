@@ -29,7 +29,11 @@
                         </a>
                     </li>
                     <li class="helper__group_item">
-                        <button class="navbar__btn">Contact sales</button>
+                        <button class="navbar__btn">
+                            <a href="./open.html">
+                                Contact sales
+                            </a>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -65,6 +69,34 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="form__section">
+            <div class="container">
+                <div class="form__content">
+                    <div class="timeout_block" id="output_text">
+                    </div>
+                    <form action="#" class="form" id="form">
+                        <div class="form__title">
+                            <h1>Register</h1>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="label">User Name</label>
+                            <input type="text" id="name" class="input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="label">User Email</label>
+                            <input type="email" id="email" class="input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="label">User Password</label>
+                            <input type="password" id="pass" class="input">
+                        </div>
+                        <button class="form__btn" onclick="handleRegister()">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="./script.js"></script>
 </body>
